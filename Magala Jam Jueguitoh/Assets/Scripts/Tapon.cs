@@ -12,6 +12,10 @@ public class Tapon : MonoBehaviour
     [SerializeField] TMP_Text tAltura, TGanador;
 
     [SerializeField] SpriteRenderer sprite;
+    [SerializeField] GameObject Pato;
+    [SerializeField] GameObject Uni;
+
+    [SerializeField] GameObject Marco;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -32,10 +36,14 @@ public class Tapon : MonoBehaviour
                 tAltura.text = altura.ToString();
                 if (altura > Tapon1.altura1)
                 {
+                    Pato.SetActive(true);
+                    Marco.SetActive(true);
                     TGanador.text = "Ganador Pato";
                 }
                 else
                 {
+                    Uni.SetActive(true);
+                    Marco.SetActive(true);
                     TGanador.text = "Ganador Unicornio";
                 }
             }
