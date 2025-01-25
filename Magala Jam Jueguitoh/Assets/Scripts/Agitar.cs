@@ -6,14 +6,18 @@ public class Agitar : MonoBehaviour
     Rigidbody2D rb;
 
     [SerializeField] GameObject botella;
+   
+    [SerializeField] float time = 5;
 
-    [SerializeField] float time = 6;
+
+    public static bool subir;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        
+        subir = true;
+
     }
 
     // Update is called once per frame
@@ -23,25 +27,39 @@ public class Agitar : MonoBehaviour
             if (time < 1)
             {
                 time = 0;
-                transform.position = new Vector3(0, 0, 0);
+                
                 Invoke("Impulso", 1);
-                Debug.Log(transform.position.y);
-                Debug.Log(Botella.jump);
             }
             else
             {
                 float sec;
                 sec = Mathf.Floor(time % 60);
                 transform.position = botella.transform.position;
-                Debug.Log(botella.transform.position.y);
             }
+
+    }
+
+    public void Impulso()
+    {
+        if(subir){
+            Debug.Log("Sube");
+            float velocidad = Botella.jump / 2;
+            transform.position = new Vector3(0, 0, 0);
+            rb.linearVelocity = Vector2.up * velocidad;
+            Debug.Log(rb.linearVelocity);
+            
+
+
+            // rb.AddForce(Vector2.up * Botella.jump, ForceMode2D.Impulse);
+        }else{
+            // Debug.Log("Baja");
+            // rb.linearVelocity = new Vector2(0, 0);
+        }
         
     }
 
-    void Impulso(){
-            
-                rb.AddForce(Vector2.up * Botella.jump, ForceMode2D.Impulse);
-               
-
-    }
+    // void Bajar()
+    // {
+    //     rb.linearVelocity = new Vector2(0, 0);
+    // }
 }
