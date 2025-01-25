@@ -1,12 +1,18 @@
 using UnityEngine;
+using TMPro;
+
 
 public class Tapon1 : MonoBehaviour
 {
     [SerializeField] float time = 9;
 
-    private float altura1;
+    public static float altura1;
     bool posicionguardada1 = false;
     Rigidbody2D rb;
+
+    [SerializeField] TMP_Text tAltura1;
+
+    [SerializeField] SpriteRenderer sprite;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -23,10 +29,12 @@ public class Tapon1 : MonoBehaviour
                 if(posicionguardada1 == false){
                     altura1 = transform.position.y;
                     posicionguardada1 = true;
-                    Debug.Log(altura1);
+                    tAltura1.text = altura1.ToString();
                 }
                 float velocidad = -Botella1.jump1 * 3;
                 rb.linearVelocity = Vector2.up * velocidad;
+
+                sprite.flipY = true;
             }
             else
             {
