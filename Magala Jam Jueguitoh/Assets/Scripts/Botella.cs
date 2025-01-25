@@ -6,7 +6,15 @@ public class Botella : MonoBehaviour
 
     public static int jump;
 
-    [SerializeField] float time = 6;
+    [SerializeField] float time = 5;
+
+    [SerializeField] GameObject tapon;
+
+    // [SerializeField] GameObject camara;
+    // [SerializeField] GameObject camamal;
+
+
+    bool taponSI = true;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -21,9 +29,13 @@ public class Botella : MonoBehaviour
         {
             time = 0;
             transform.position = new Vector3(0, 0, 0);
+            if(taponSI){
+                taponSI = false;
+                tapon.SetActive(true);
+            }
 
-            Debug.Log(transform.position.y);
-            Debug.Log(Botella.jump);
+            
+            
         }
         else
         {
@@ -40,8 +52,6 @@ public class Botella : MonoBehaviour
             }
         }
 
-
-        Debug.Log(jump);
 
     }
 }
