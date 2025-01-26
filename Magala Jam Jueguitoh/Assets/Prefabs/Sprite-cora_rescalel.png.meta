@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Sprite-cora_rescalel_0: 5242506156987055188
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Logo_Jam_1000_0: 629988752573587747
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
