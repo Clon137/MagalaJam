@@ -1,0 +1,429 @@
+fileFormatVersion: 2
+guid: 6c59492fbdae27a4bb3a0ecd195ff991
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6791968177582016369
+    second: Botella_corniotapon-sheet_0
+  - first:
+      213: -4617444461162185531
+    second: Botella_corniotapon-sheet_1
+  - first:
+      213: -2202868884230488738
+    second: Botella_corniotapon-sheet_2
+  - first:
+      213: -1368105380345313741
+    second: Botella_corniotapon-sheet_3
+  - first:
+      213: 153687361647218455
+    second: Botella_corniotapon-sheet_4
+  - first:
+      213: 1500754463230707621
+    second: Botella_corniotapon-sheet_5
+  - first:
+      213: 3610322678488069229
+    second: Botella_corniotapon-sheet_6
+  - first:
+      213: -1068795964941865905
+    second: Botella_corniotapon-sheet_7
+  - first:
+      213: -6321852440223698996
+    second: Botella_corniotapon-sheet_8
+  - first:
+      213: -33091709813565859
+    second: Botella_corniotapon-sheet_9
+  - first:
+      213: 3678397427997393755
+    second: Botella_corniotapon-sheet_10
+  - first:
+      213: 6325253537886876657
+    second: Botella_corniotapon-sheet_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Botella_corniotapon-sheet_0
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 0
+        width: 24
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1778886721be14e50800000000000000
+      internalID: 6791968177582016369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Botella_corniotapon-sheet_1
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 0
+        width: 24
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cc35521aba8befb0800000000000000
+      internalID: -4617444461162185531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Botella_corniotapon-sheet_2
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 0
+        width: 24
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5d3eaccb66dd61e0800000000000000
+      internalID: -2202868884230488738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Botella_corniotapon-sheet_3
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 0
+        width: 24
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3368735b763830de0800000000000000
+      internalID: -1368105380345313741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Botella_corniotapon-sheet_4
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 0
+        width: 24
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71f037557d1022200800000000000000
+      internalID: 153687361647218455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Botella_corniotapon-sheet_5
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 0
+        width: 24
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a7c2f3ab30c3d410800000000000000
+      internalID: 1500754463230707621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Botella_corniotapon-sheet_6
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 0
+        width: 24
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6471d709517a1230800000000000000
+      internalID: 3610322678488069229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Botella_corniotapon-sheet_7
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4ce44c8bbfda21f0800000000000000
+      internalID: -1068795964941865905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Botella_corniotapon-sheet_8
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 22
+        width: 8
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccfa70243b44448a0800000000000000
+      internalID: -6321852440223698996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Botella_corniotapon-sheet_9
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d565d87e34f6a8ff0800000000000000
+      internalID: -33091709813565859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Botella_corniotapon-sheet_10
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 38
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b53ce76c8fa4c0330800000000000000
+      internalID: 3678397427997393755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Botella_corniotapon-sheet_11
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 0
+        width: 27
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f3b7008490d7c750800000000000000
+      internalID: 6325253537886876657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Botella_corniotapon-sheet_0: 6791968177582016369
+      Botella_corniotapon-sheet_1: -4617444461162185531
+      Botella_corniotapon-sheet_10: 3678397427997393755
+      Botella_corniotapon-sheet_11: 6325253537886876657
+      Botella_corniotapon-sheet_2: -2202868884230488738
+      Botella_corniotapon-sheet_3: -1368105380345313741
+      Botella_corniotapon-sheet_4: 153687361647218455
+      Botella_corniotapon-sheet_5: 1500754463230707621
+      Botella_corniotapon-sheet_6: 3610322678488069229
+      Botella_corniotapon-sheet_7: -1068795964941865905
+      Botella_corniotapon-sheet_8: -6321852440223698996
+      Botella_corniotapon-sheet_9: -33091709813565859
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

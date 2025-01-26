@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Tapon : MonoBehaviour
 {
@@ -18,6 +19,8 @@ public class Tapon : MonoBehaviour
     [SerializeField] GameObject Marco;
 
     [SerializeField] GameObject TaponUni;
+
+    [SerializeField] Animator anim;
 
     // public static int scale = 0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -40,10 +43,12 @@ public class Tapon : MonoBehaviour
                 posicionguardada = true;
                 tAltura.text = altura.ToString();
                 Compare();
+                Invoke("SaliralMenu",4);
 
             }
             float velocidad = -Botella.jump * 3;
             rb.linearVelocity = Vector2.up * velocidad;
+            anim.SetBool("isBaja", true);
 
             sprite.flipY = true;
         }
@@ -70,5 +75,9 @@ public class Tapon : MonoBehaviour
             Marco.SetActive(true);
             TGanador.text = "Ganador Unicornio";
         }
+    }
+
+    void SaliralMenu(){
+        SceneManager.LoadScene("MainMenu");
     }
 }

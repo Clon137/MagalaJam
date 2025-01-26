@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 13d22f150556c6247b8efa7d4d7203fa
+guid: dc7853ec9b746f34ca9f826de4d52fb1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5099051976437572550
-    second: Botella_pato_0
+      213: -7770627199867127808
+    second: Sprite-Mesa_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 300
+  spritePixelsToUnits: 2
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Botella_pato_0
+      name: Sprite-Mesa_0
       rect:
         serializedVersion: 2
-        x: 209
+        x: 0
         y: 0
-        width: 222
-        height: 601
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6c3a0d2b1c873c640800000000000000
-      internalID: 5099051976437572550
+      spriteID: 0087ee57bbf292490800000000000000
+      internalID: -7770627199867127808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-Mesa_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d47ccc6097e29645bdc20dc14b37ec8
+      internalID: 1449620185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-Mesa_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76cb73f3e7252b84a9a19b4fc2b3941e
+      internalID: 751943411
       vertices: []
       indices: 
       edges: []
@@ -125,7 +169,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: b3ea905dbbe3e974eaa166ed8a2d4901
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +179,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Botella_pato_0: 5099051976437572550
+      Sprite-Mesa_0: -7770627199867127808
+      Sprite-Mesa_1: 1449620185
+      Sprite-Mesa_2: 751943411
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
