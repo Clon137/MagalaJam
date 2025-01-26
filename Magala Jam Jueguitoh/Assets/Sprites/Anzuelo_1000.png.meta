@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Anzuelo_1000_0: -6248163444395859264
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

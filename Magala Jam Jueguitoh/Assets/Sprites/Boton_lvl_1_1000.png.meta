@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e6df1fb5f09537d4f9960361d2b8deca
+guid: bffe9db83306eec4890d897711d37260
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5373685916291238553
-    second: Sprite-cacahuete_rescale_0
+      213: 1931639986968496992
+    second: Boton_lvl_1_1000_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sprite-cacahuete_rescale_0
+      name: Boton_lvl_1_1000_0
       rect:
         serializedVersion: 2
-        x: 139
-        y: 139
-        width: 162
-        height: 162
+        x: 0
+        y: 0
+        width: 320
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 765f0f05125dc65b0800000000000000
-      internalID: -5373685916291238553
+      spriteID: 06b823975509eca10800000000000000
+      internalID: 1931639986968496992
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Sprite-cacahuete_rescale_0: -5373685916291238553
+      Boton_lvl_1_1000_0: 1931639986968496992
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
