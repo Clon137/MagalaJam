@@ -2,14 +2,19 @@ using UnityEngine;
 
 public class Plyr2 : MonoBehaviour
 {
-   
+
     public float velocidad = 5f;  // Velocidad de movimiento
     [SerializeField] GameObject MenuWin;
     [SerializeField] GameObject Retrato;
     [SerializeField] Animator anim;
 
     public bool ganar;
-    public bool lose;
+    public static bool lose2;
+
+    void Start()
+    {
+        lose2 = false;
+    }
 
     void Update()
     {
@@ -31,45 +36,50 @@ public class Plyr2 : MonoBehaviour
         // Mover al jugador
         Vector2 movimiento = new Vector2(moverHorizontal, moverVertical).normalized * velocidad * Time.deltaTime;
         transform.Translate(movimiento);
+
+        if (lose2 == true)
+            {
+
+                anim.SetBool("isDead2", true);
+                Debug.Log("Haz perdido");
+
+            }
     }
 
-     public void OnTriggerEnter2D (Collider2D other){
+    public void OnTriggerEnter2D(Collider2D other)
+    {
 
-      if(other.gameObject.CompareTag("Obstacle"))
-      {
+        if (other.gameObject.CompareTag("Obstacle"))
+        {
 
-        velocidad = 2f;
-        Invoke("retornar",2);
+            velocidad = 2f;
+            Invoke("retornar", 2);
 
 
         }
 
-        if(other.gameObject.CompareTag("Meta")){
+        if (other.gameObject.CompareTag("Meta"))
+        {
 
             ganar = true;
             MenuWin.SetActive(true);
             Retrato.SetActive(true);
-            Invoke("Destener",4);
-            
-        } else {
-        
-            if(lose == true){
+            // Invoke("detener", 4);
+            Plyr1.lose1 = true;
 
-                anim.SetBool("isdie", true);
-                Invoke("Destuir",2);
-
-            }
         }
     }
 
-    void retornar(){
+    void retornar()
+    {
 
-        velocidad =5f;
+        velocidad = 5f;
     }
 
-    void detener (){
+    // void detener()
+    // {
 
-        Time.timeScale = 0;
-    }
+    //     Time.timeScale = 0;
+    // }
 }
 

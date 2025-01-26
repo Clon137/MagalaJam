@@ -5,13 +5,18 @@ public class Plyr1 : MonoBehaviour
 
 {
 
- [SerializeField] GameObject MenuWin;
+    [SerializeField] GameObject MenuWin;
     [SerializeField] GameObject Retrato;
-    [SerializeField] Animator anim;
+    [SerializeField] Animator anim1;
 
     public bool ganar;
-    public bool lose;
-     public float velocidad = 5f;  // Velocidad de movimiento
+    public static bool lose1;
+    public float velocidad = 5f;  // Velocidad de movimiento
+
+    void Start()
+    {
+        lose1 = false;
+    }
 
     void Update()
     {
@@ -33,39 +38,51 @@ public class Plyr1 : MonoBehaviour
         // Mover al jugador
         Vector2 movimiento = new Vector2(moverHorizontal, moverVertical).normalized * velocidad * Time.deltaTime;
         transform.Translate(movimiento);
+
+         if (lose1 == true)
+            {
+
+                anim1.SetBool("isDead", true);
+                Invoke("detener", 2);
+                Debug.Log("Has perdidoply1");
+
+
+            }
     }
 
-   public void OnTriggerEnter2D (Collider2D other){
+    public void OnTriggerEnter2D(Collider2D other)
+    {
 
-      if(other.gameObject.CompareTag("Obstacle"))
-      {
+        if (other.gameObject.CompareTag("Obstacle"))
+        {
 
-        velocidad = 2f;
-        Invoke("retornar",2);
+            velocidad = 2f;
+            Invoke("retornar", 2);
 
 
         }
 
-         if(other.gameObject.CompareTag("Meta")){
+        if (other.gameObject.CompareTag("Meta"))
+        {
 
             ganar = true;
             MenuWin.SetActive(true);
             Retrato.SetActive(true);
-            Invoke("Destener",4);
-            
-        } else {
-        
-            if(lose == true){
+            Invoke("detener", 2);
+            Plyr2.lose2 = true;
 
-                anim.SetBool("isdie", true);
-                Invoke("Destuir",2);
-
-            }
         }
     }
 
-    void retornar(){
+    void retornar()
+    {
 
-        velocidad =5f;
+        velocidad = 5f;
+    }
+
+    void detener()
+    {
+
+        Time.timeScale = 0;
     }
 }

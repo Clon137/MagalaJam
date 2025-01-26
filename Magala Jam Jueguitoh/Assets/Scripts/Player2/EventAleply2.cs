@@ -6,7 +6,7 @@ public class EventAleply2 : MonoBehaviour
 {
    public bool isGenerating = false; // Controla si se generan números.
     private Coroutine randomNumberCoroutine; // Referencia a la corutina.
-    public Eventos2 eventosjeje;
+    public Eventos2 eventos2jeje;
     
     public PosicionController jeje; // Referencia al script del evento.
 
@@ -15,9 +15,9 @@ public class EventAleply2 : MonoBehaviour
     private void Start()
     {
        
-        if (eventosjeje == null)
+        if (eventos2jeje == null)
         {
-            eventosjeje = FindObjectOfType <Eventos2>(); // Busca el BossController en la escena.
+            eventos2jeje = FindObjectOfType <Eventos2>(); // Busca el BossController en la escena.
         }
     }
 
@@ -38,10 +38,10 @@ public class EventAleply2 : MonoBehaviour
             Debug.Log($"Número aleatorio generado: {randomNumber}");
 
             // Envía el número al BossController.
-            if (eventosjeje != null)
+            if (eventos2jeje != null)
             {
                 Debug.Log("Enviando número al BossController");
-                eventosjeje.ReceiveRandomNumber(randomNumber);
+                eventos2jeje.ReceiveRandomNumber(randomNumber);
                 jeje.ReceiveRandomNumber(randomNumber); // Enviar el número al BossController.
             }
 
