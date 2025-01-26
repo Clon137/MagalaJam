@@ -9,6 +9,7 @@ public class Botella : MonoBehaviour
     [SerializeField] float time = 5;
 
     [SerializeField] GameObject tapon;
+    [SerializeField] Animator anim;
 
     // [SerializeField] GameObject camara;
     // [SerializeField] GameObject camamal;
@@ -35,6 +36,7 @@ public class Botella : MonoBehaviour
             {
                 taponSI = false;
                 tapon.SetActive(true);
+                anim.SetBool("isSalta",true);
             }
 
 

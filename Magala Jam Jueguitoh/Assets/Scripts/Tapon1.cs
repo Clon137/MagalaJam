@@ -15,6 +15,8 @@ public class Tapon1 : MonoBehaviour
     [SerializeField] TMP_Text tAltura1;
 
     [SerializeField] SpriteRenderer sprite;
+
+    [SerializeField] Animator anim;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -36,7 +38,7 @@ public class Tapon1 : MonoBehaviour
                 }
                 float velocidad = -Botella1.jump1 * 3;
                 rb.linearVelocity = Vector2.up * velocidad;
-
+                anim.SetBool("isBaja2", true);
                 sprite.flipY = true;
             }
             else
