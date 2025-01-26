@@ -2461,7 +2461,7 @@ MonoBehaviour:
   anim1: {fileID: 1864755578}
   ganar: 0
   velocidad: 5
-  adexplo: {fileID: 0}
+  adexplo: {fileID: 8300000, guid: 1b07bbe635ee1d44284f0e2a3b8a0c99, type: 3}
 --- !u!4 &894537973
 Transform:
   m_ObjectHideFlags: 0
@@ -6956,7 +6956,7 @@ MonoBehaviour:
   MenuWin: {fileID: 642163256}
   Retrato: {fileID: 1873439157}
   anim: {fileID: 1743425308}
-  adexplo: {fileID: 8300000, guid: e273e17775cd4c642a5e0666a3f98698, type: 3}
+  adexplo: {fileID: 8300000, guid: 1b07bbe635ee1d44284f0e2a3b8a0c99, type: 3}
   ganar: 0
 --- !u!114 &1404403020
 MonoBehaviour:
