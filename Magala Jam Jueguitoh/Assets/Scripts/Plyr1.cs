@@ -12,10 +12,14 @@ public class Plyr1 : MonoBehaviour
     public bool ganar;
     public static bool lose1;
     public float velocidad = 5f;  // Velocidad de movimiento
+     [SerializeField] AudioClip adexplo;
+     AudioSource audioSrc;
 
     void Start()
     {
         lose1 = false;
+        
+         audioSrc = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -45,6 +49,7 @@ public class Plyr1 : MonoBehaviour
                 anim1.SetBool("isDead", true);
                 Invoke("detener", 2);
                 Debug.Log("Has perdidoply1");
+                audioSrc.PlayOneShot(adexplo);
 
 
             }
