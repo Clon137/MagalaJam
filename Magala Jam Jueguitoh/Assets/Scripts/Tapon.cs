@@ -16,6 +16,8 @@ public class Tapon : MonoBehaviour
     [SerializeField] GameObject Uni;
 
     [SerializeField] GameObject Marco;
+
+    // public static int scale = 0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

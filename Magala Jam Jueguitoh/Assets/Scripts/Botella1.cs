@@ -29,27 +29,32 @@ public class Botella1 : MonoBehaviour
         {
             time = 0;
             transform.position = new Vector3(65, 0, 0);
-            if(tapon1SI){
+            if (tapon1SI)
+            {
                 tapon1SI = false;
                 tapon1.SetActive(true);
             }
 
-            
-            
+
+
         }
         else
         {
-            if (Input.GetKeyDown(KeyCode.LeftArrow) && abajo1)
+            if (Countdown.adelante)
             {
-                transform.position = new Vector3(65, transform.position.y - 2, 0);
-                abajo1 = false;
+                if (Input.GetKeyDown(KeyCode.LeftArrow) && abajo1)
+                {
+                    transform.position = new Vector3(65, transform.position.y - 2, 0);
+                    abajo1 = false;
+                }
+                if (Input.GetKeyDown(KeyCode.RightArrow) && !abajo1)
+                {
+                    transform.position = new Vector3(65, transform.position.y + 2, 0);
+                    abajo1 = true;
+                    jump1++;
+                }
             }
-            if (Input.GetKeyDown(KeyCode.RightArrow) && !abajo1)
-            {
-                transform.position = new Vector3(65, transform.position.y + 2, 0);
-                abajo1 = true;
-                jump1++;
-            }
+
         }
 
 

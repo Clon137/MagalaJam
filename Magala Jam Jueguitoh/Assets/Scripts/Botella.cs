@@ -15,10 +15,12 @@ public class Botella : MonoBehaviour
 
 
     bool taponSI = true;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         jump = 1;
+        Time.timeScale = 0;
     }
 
     // Update is called once per frame
@@ -29,27 +31,32 @@ public class Botella : MonoBehaviour
         {
             time = 0;
             transform.position = new Vector3(0, 0, 0);
-            if(taponSI){
+            if (taponSI)
+            {
                 taponSI = false;
                 tapon.SetActive(true);
             }
 
-            
-            
+
+
         }
         else
         {
-            if (Input.GetKeyDown(KeyCode.A) && abajo)
+            if (Countdown.adelante)
             {
-                transform.position = new Vector3(0, transform.position.y - 2, 0);
-                abajo = false;
+                if (Input.GetKeyDown(KeyCode.A) && abajo)
+                {
+                    transform.position = new Vector3(0, transform.position.y - 2, 0);
+                    abajo = false;
+                }
+                if (Input.GetKeyDown(KeyCode.D) && !abajo)
+                {
+                    transform.position = new Vector3(0, transform.position.y + 2, 0);
+                    abajo = true;
+                    jump++;
+                }
             }
-            if (Input.GetKeyDown(KeyCode.D) && !abajo)
-            {
-                transform.position = new Vector3(0, transform.position.y + 2, 0);
-                abajo = true;
-                jump++;
-            }
+
         }
 
 
