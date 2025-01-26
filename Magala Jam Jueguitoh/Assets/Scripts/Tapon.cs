@@ -57,7 +57,7 @@ public class Tapon : MonoBehaviour
                 posicionguardada = true;
                 tAltura.text = altura.ToString();
                 Compare();
-                Invoke("SaliralMenu",8);
+                Invoke("SaliralMenu",15);
 
             }
             float velocidad = -Botella.jump * 3;
