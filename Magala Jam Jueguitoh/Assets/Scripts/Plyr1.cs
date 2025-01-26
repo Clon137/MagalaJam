@@ -47,7 +47,6 @@ public class Plyr1 : MonoBehaviour
             {
 
                 anim1.SetBool("isDead", true);
-                Invoke("detener", 2);
                 Debug.Log("Has perdidoply1");
                 audioSrc.PlayOneShot(adexplo);
 
@@ -73,7 +72,6 @@ public class Plyr1 : MonoBehaviour
             ganar = true;
             MenuWin.SetActive(true);
             Retrato.SetActive(true);
-            Invoke("detener", 2);
             Plyr2.lose2 = true;
 
         }
@@ -85,9 +83,5 @@ public class Plyr1 : MonoBehaviour
         velocidad = 5f;
     }
 
-    void detener()
-    {
-
-        Time.timeScale = 0;
-    }
+   
 }

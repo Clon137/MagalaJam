@@ -70,7 +70,6 @@ public class Plyr2 : MonoBehaviour
             ganar = true;
             MenuWin.SetActive(true);
             Retrato.SetActive(true);
-            // Invoke("detener", 4);
             Plyr1.lose1 = true;
 
         }
@@ -82,10 +81,6 @@ public class Plyr2 : MonoBehaviour
         velocidad = 5f;
     }
 
-    // void detener()
-    // {
-
-    //     Time.timeScale = 0;
-    // }
+    
 }
 

@@ -26,7 +26,7 @@ public class Controllmusicameta : MonoBehaviour
           audioSrc.PlayOneShot(adwiner);
           audioSrc.PlayOneShot(adfan);
 
-          Invoke("Menu",1);
+          Invoke("Menu",4);
         }
     }
 
