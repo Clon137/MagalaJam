@@ -17,6 +17,8 @@ public class Tapon : MonoBehaviour
 
     [SerializeField] GameObject Marco;
 
+    [SerializeField] GameObject TaponUni;
+
     // public static int scale = 0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -34,20 +36,11 @@ public class Tapon : MonoBehaviour
             if (posicionguardada == false)
             {
                 altura = transform.position.y;
+                Tapon1.altura1 = TaponUni.transform.position.y;
                 posicionguardada = true;
                 tAltura.text = altura.ToString();
-                if (altura > Tapon1.altura1)
-                {
-                    Pato.SetActive(true);
-                    Marco.SetActive(true);
-                    TGanador.text = "Ganador Pato";
-                }
-                else
-                {
-                    Uni.SetActive(true);
-                    Marco.SetActive(true);
-                    TGanador.text = "Ganador Unicornio";
-                }
+                Compare();
+
             }
             float velocidad = -Botella.jump * 3;
             rb.linearVelocity = Vector2.up * velocidad;
@@ -60,5 +53,22 @@ public class Tapon : MonoBehaviour
             rb.linearVelocity = Vector2.up * velocidad;
         }
 
+    }
+
+    void Compare()
+    {
+        if (altura > Tapon1.altura1)
+        {
+            Debug.Log("Pato" + altura + "Uni" + Tapon1.altura1);
+            Pato.SetActive(true);
+            Marco.SetActive(true);
+            TGanador.text = "Ganador Pato";
+        }
+        else
+        {
+            Uni.SetActive(true);
+            Marco.SetActive(true);
+            TGanador.text = "Ganador Unicornio";
+        }
     }
 }
