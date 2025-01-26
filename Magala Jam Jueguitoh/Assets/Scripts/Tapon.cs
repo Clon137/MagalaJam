@@ -28,6 +28,8 @@ public class Tapon : MonoBehaviour
 
     public static bool Corcho;
 
+    bool oneShot;
+
     // public static int scale = 0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -37,6 +39,8 @@ public class Tapon : MonoBehaviour
         audioSrc = GetComponent<AudioSource>();
 
         Corcho = false;
+
+        oneShot = false;
     }
 
     // Update is called once per frame
@@ -53,7 +57,7 @@ public class Tapon : MonoBehaviour
                 posicionguardada = true;
                 tAltura.text = altura.ToString();
                 Compare();
-                Invoke("SaliralMenu",4);
+                Invoke("SaliralMenu",8);
 
             }
             float velocidad = -Botella.jump * 3;
@@ -67,10 +71,10 @@ public class Tapon : MonoBehaviour
             float velocidad = Botella.jump * 3;
             rb.linearVelocity = Vector2.up * velocidad;
         }
-        Debug.Log(Corcho);
 
-        if(Corcho){
+        if(Botella.Paso && !oneShot){
             audioSrc.PlayOneShot(sCorcho);
+            oneShot = true;
         }
 
     }
@@ -95,6 +99,6 @@ public class Tapon : MonoBehaviour
     }
 
     void SaliralMenu(){
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("Main Menu");
     }
 }

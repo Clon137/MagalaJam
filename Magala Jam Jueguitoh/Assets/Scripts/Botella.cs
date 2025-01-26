@@ -6,6 +6,8 @@ public class Botella : MonoBehaviour
 
     public static int jump;
 
+    public static bool Paso;
+
     [SerializeField] float time = 5;
 
     [SerializeField] GameObject tapon;
@@ -38,6 +40,7 @@ public class Botella : MonoBehaviour
                 tapon.SetActive(true);
                 anim.SetBool("isSalta",true);
                 Tapon.Corcho = true;
+                Paso = Tapon.Corcho;
             }
 
 
