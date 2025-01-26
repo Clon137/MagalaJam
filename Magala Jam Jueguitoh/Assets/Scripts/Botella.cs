@@ -37,6 +37,7 @@ public class Botella : MonoBehaviour
                 taponSI = false;
                 tapon.SetActive(true);
                 anim.SetBool("isSalta",true);
+                Tapon.Corcho = true;
             }
 
 
