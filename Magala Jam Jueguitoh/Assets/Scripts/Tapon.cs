@@ -67,6 +67,7 @@ public class Tapon : MonoBehaviour
             float velocidad = Botella.jump * 3;
             rb.linearVelocity = Vector2.up * velocidad;
         }
+        Debug.Log(Corcho);
 
         if(Corcho){
             audioSrc.PlayOneShot(sCorcho);
