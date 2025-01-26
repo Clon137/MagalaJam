@@ -22,11 +22,21 @@ public class Tapon : MonoBehaviour
 
     [SerializeField] Animator anim;
 
+    [SerializeField] AudioClip sCorcho, sVictory, sAplausos;
+
+    AudioSource audioSrc;
+
+    public static bool Corcho;
+
     // public static int scale = 0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+
+        audioSrc = GetComponent<AudioSource>();
+
+        Corcho = false;
     }
 
     // Update is called once per frame
@@ -58,6 +68,10 @@ public class Tapon : MonoBehaviour
             rb.linearVelocity = Vector2.up * velocidad;
         }
 
+        if(Corcho){
+            audioSrc.PlayOneShot(sCorcho);
+        }
+
     }
 
     void Compare()
@@ -75,6 +89,8 @@ public class Tapon : MonoBehaviour
             Marco.SetActive(true);
             TGanador.text = "Ganador Unicornio";
         }
+        audioSrc.PlayOneShot(sVictory);
+        audioSrc.PlayOneShot(sAplausos);
     }
 
     void SaliralMenu(){
