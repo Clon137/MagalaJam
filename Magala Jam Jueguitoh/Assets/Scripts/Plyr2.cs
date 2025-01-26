@@ -8,12 +8,18 @@ public class Plyr2 : MonoBehaviour
     [SerializeField] GameObject Retrato;
     [SerializeField] Animator anim;
 
+     [SerializeField] AudioClip adexplo;
+     AudioSource audioSrc;
+
     public bool ganar;
     public static bool lose2;
 
     void Start()
     {
         lose2 = false;
+          audioSrc = GetComponent<AudioSource>();
+           audioSrc.PlayOneShot(adexplo);
+
     }
 
     void Update()
