@@ -180,7 +180,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -830,7 +830,7 @@ MonoBehaviour:
 
 
 
-    Tairler
+    Trailer
 
 
     Music/SFX
@@ -1292,9 +1292,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Jorge Vargar Urban\n\nDavid Salido Lozano\nBrandon Ovalle Amadeus\n\nJuan
+  m_text: "Jorge Vargas Urban\n\nDavid Salido Lozano\nBrandon Ovalle Mateus\n\nJuan
     Arenas Aguilar\nSergio Galan Garrido\nAlberto Carrascal Cuadrado\n\n \nJorge
-    Vargar Urban\n\nAlejandro Membrilla Mengual"
+    Vargas Urban\n\nAlejandro Membrilla Mengual"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9440a30f74e28394aa9118512f88de58, type: 2}
   m_sharedMaterial: {fileID: 6625801265751568983, guid: 9440a30f74e28394aa9118512f88de58, type: 2}

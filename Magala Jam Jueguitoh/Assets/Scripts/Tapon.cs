@@ -99,6 +99,7 @@ public class Tapon : MonoBehaviour
     }
 
     void SaliralMenu(){
+        Countdown.adelante = false;
         SceneManager.LoadScene("Main Menu");
     }
 }

@@ -42,7 +42,7 @@ public class Botella1 : MonoBehaviour
         }
         else
         {
-            if (Countdown.adelante)
+            if (Countdown.adelante == true)
             {
                 if (Input.GetKeyDown(KeyCode.LeftArrow) && abajo1)
                 {

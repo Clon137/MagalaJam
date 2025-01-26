@@ -48,7 +48,7 @@ public class Botella : MonoBehaviour
         }
         else
         {
-            if (Countdown.adelante)
+            if (Countdown.adelante == true)
             {
                 if (Input.GetKeyDown(KeyCode.A) && abajo)
                 {

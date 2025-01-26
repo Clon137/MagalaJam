@@ -11,6 +11,8 @@ public class Plyr1 : MonoBehaviour
 
     public bool ganar;
     public static bool lose1;
+    public static bool cruza1;
+    
     public float velocidad = 5f;  // Velocidad de movimiento
      [SerializeField] AudioClip adexplo;
      AudioSource audioSrc;
@@ -20,6 +22,7 @@ public class Plyr1 : MonoBehaviour
         lose1 = false;
         
          audioSrc = GetComponent<AudioSource>();
+         cruza1 = false;
     }
 
     void Update()
@@ -66,13 +69,15 @@ public class Plyr1 : MonoBehaviour
 
         }
 
-        if (other.gameObject.CompareTag("Meta"))
+        if (other.gameObject.CompareTag("Meta") && !cruza1)
         {
 
             ganar = true;
             MenuWin.SetActive(true);
             Retrato.SetActive(true);
             Plyr2.lose2 = true;
+            cruza1 = true;
+            Plyr2.cruza2 = true;
 
         }
     }

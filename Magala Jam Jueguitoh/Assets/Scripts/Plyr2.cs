@@ -13,6 +13,7 @@ public class Plyr2 : MonoBehaviour
 
     public bool ganar;
     public static bool lose2;
+    public static bool cruza2;
 
     void Start()
     {
@@ -20,6 +21,7 @@ public class Plyr2 : MonoBehaviour
           audioSrc = GetComponent<AudioSource>();
            audioSrc.PlayOneShot(adexplo);
 
+        cruza2 = false;
     }
 
     void Update()
@@ -64,13 +66,15 @@ public class Plyr2 : MonoBehaviour
 
         }
 
-        if (other.gameObject.CompareTag("Meta"))
+        if (other.gameObject.CompareTag("Meta") && !cruza2)
         {
 
             ganar = true;
             MenuWin.SetActive(true);
             Retrato.SetActive(true);
             Plyr1.lose1 = true;
+            cruza2 = true;
+            Plyr1.cruza1 = true;
 
         }
     }
